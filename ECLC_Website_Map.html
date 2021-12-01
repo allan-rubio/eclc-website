@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"root","d":0,"v":"","c":[{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Home","c":[{"t":"heading","d":2,"p":{"lines":[1,2]},"v":"Name &amp; Brief Description"},{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"Options for students &amp; partners to get involved"},{"t":"heading","d":2,"p":{"lines":[3,4]},"v":"New events coming soon"},{"t":"heading","d":2,"p":{"lines":[4,5]},"v":"What we do?","c":[{"t":"heading","d":3,"p":{"lines":[5,6]},"v":"Events"},{"t":"heading","d":3,"p":{"lines":[6,7]},"v":"Training"},{"t":"heading","d":3,"p":{"lines":[7,8]},"v":"Information"}]},{"t":"heading","d":2,"p":{"lines":[8,9]},"v":"Upcoming Events"}]},{"t":"heading","d":1,"p":{"lines":[10,11]},"v":"About","c":[{"t":"heading","d":2,"p":{"lines":[11,12]},"v":"More comprehensive description about the collaborative"},{"t":"heading","d":2,"p":{"lines":[12,13]},"v":"Urgency of climate change solutions"},{"t":"heading","d":2,"p":{"lines":[13,14]},"v":"Description of each partner"},{"t":"heading","d":2,"p":{"lines":[14,15]},"v":"Description of previous events + links"},{"t":"heading","d":2,"p":{"lines":[15,16]},"v":"Visions for the future"}]},{"t":"heading","d":1,"p":{"lines":[17,18]},"v":"Previous Events","c":[{"t":"heading","d":2,"p":{"lines":[18,19]},"v":"Road to COP26","c":[{"t":"heading","d":3,"p":{"lines":[19,20]},"v":"Embedded video (privacy)"},{"t":"heading","d":3,"p":{"lines":[20,21]},"v":"About"},{"t":"heading","d":3,"p":{"lines":[21,22]},"v":"Goals"},{"t":"heading","d":3,"p":{"lines":[22,23]},"v":"Speakers &amp; Itinerary"},{"t":"heading","d":3,"p":{"lines":[23,24]},"v":"Slideshow of speakers/panelists"},{"t":"heading","d":3,"p":{"lines":[24,25]},"v":"Sponsors + Partners"},{"t":"heading","d":3,"p":{"lines":[25,26]},"v":"Media"}]},{"t":"heading","d":2,"p":{"lines":[26,27]},"v":"Climate &amp; Clean Energy Youth Forum","c":[{"t":"heading","d":3,"p":{"lines":[27,28]},"v":"..."}]},{"t":"heading","d":2,"p":{"lines":[28,29]},"v":"NH Youth Climate &amp; Clean Energy Town Hall","c":[{"t":"heading","d":3,"p":{"lines":[29,30]},"v":"..."}]}]},{"t":"heading","d":1,"p":{"lines":[31,32]},"v":"Training + education","c":[{"t":"heading","d":2,"p":{"lines":[32,33]},"v":"Courses offered by partners"},{"t":"heading","d":2,"p":{"lines":[33,34]},"v":"Blogs (written by us + partners + other students)"},{"t":"heading","d":2,"p":{"lines":[34,35]},"v":"External courses"},{"t":"heading","d":2,"p":{"lines":[35,36]},"v":"News + Links to get information on climate change"},{"t":"heading","d":2,"p":{"lines":[36,37]},"v":"Get involved / opportunity boards"},{"t":"heading","d":2,"p":{"lines":[37,38]},"v":"any other educational tools ..."}]},{"t":"heading","d":1,"p":{"lines":[39,40]},"v":"Get involved","c":[{"t":"heading","d":2,"p":{"lines":[40,41]},"v":"Active projects"},{"t":"heading","d":2,"p":{"lines":[41,42]},"v":"Sign up as panelists for events in the near future"},{"t":"heading","d":2,"p":{"lines":[42,43]},"v":"Students sign up for email list"},{"t":"heading","d":2,"p":{"lines":[43,44]},"v":"New partners to sign up"},{"t":"heading","d":2,"p":{"lines":[44,45]},"v":"..."}]}],"p":{}})</script>
+</body>
+</html>
